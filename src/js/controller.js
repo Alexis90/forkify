@@ -116,6 +116,10 @@ const controlUploadRecipe = async function (newRecipe) {
   }
 };
 
+const controlBookmarks = function () {
+  bookmarksView.render(model.state.bookmarks);
+};
+
 const init = function () {
   model.restoreBookmarks();
   recipeView.addHandlerRender(controlRecipes);
@@ -124,6 +128,7 @@ const init = function () {
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerAddBookmark(controlAddBookmark);
   addRecipeView.addHandlerUpload(controlUploadRecipe);
+  bookmarksView.addHandlerRender(controlBookmarks);
 };
 init();
 

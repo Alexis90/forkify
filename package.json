@@ -4,7 +4,7 @@
   "description": "Recipe application",
   "scripts": {
     "start": "parcel index.html",
-    "build": "pacel build index.html"
+    "build": "parcel build index.html"
   },
   "author": "WU Meng",
   "license": "ISC",
